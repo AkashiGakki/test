@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+	<style>
+		form {
+			width: 50%;
+			margin: 100px auto;
+		}
+		h3 {
+			text-align: center;
+		}
+		.form-input {
+			width: 100%;
+		}
+		.text {
+			width: 100px;
+            text-align: left;
+            display: inline-block;
+            margin: 5px 10px;
+		}
+	</style>
+</head>
+<body>
+	<form action="">
+		<h3>New Member</h3>
+		<div class="form-input">
+			<span class="text">ID</span><input type="text">
+		</div>
+		<div class="form-input">
+			<span class="text">Password</span><input type="password">
+		</div>
+		<div class="form-input">
+			<span class="text">Re-Password</span><input type="password">
+		</div>
+		<br>
+		<div class="form-input">
+			<span class="text">First Name</span><input type="text">
+		</div>
+		<div class="form-input">
+			<span class="text">Last Name</span><input type="text">
+		</div>
+		<div class="form-input">
+			<span class="text">Address</span><input type="text">
+		</div>
+		<div class="form-input">
+			<span class="text">City</span><input type="text">
+		</div>
+		<div class="form-input">
+			<span class="text">State</span>
+			<select name="stage" id="">
+				<option value="">[Select Stage]</option>
+			</select>
+		</div>
+		<div class="form-input">
+			<span class="text">Country</span><input type="text">
+		</div>
+		<div class="form-input">
+			<span class="text">Emall Address</span><input type="email">
+		</div>
+		<br>
+		<div>
+			<span>Select Interest</span>
+			<input type="checkbox" name="vehicle" value="Technology">Technology
+			<input type="checkbox" name="vehicle" value="Enterprise" class="from-input">Enterprise
+			<input type="checkbox" name="vehicle" value="Research" class="from-input">Research
+			<input type="checkbox" name="vehicle" value="Govemment" class="from-input">Govemment
+			<input type="checkbox" name="vehicle" value="People" class="from-input">People
+			<input type="checkbox" name="vehicle" value="Life" class="from-input">Life
+			<input type="checkbox" name="vehicle" value="Opinion" class="from-input">Opinion
+		</div>
+	</form>
+</body>
+</html>

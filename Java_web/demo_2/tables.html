@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tables</title>
+</head>
+<body>
+	<p>这个表格没有边框</p>
+	<table>
+		<tr>
+			<td>100</td>
+			<td>200</td>
+			<td>300</td>
+		</tr>
+		<tr>
+			<td>400</td>
+			<td>500</td>
+			<td>600</td>
+		</tr>
+	</table>
+
+	<p>这个表格也没有边框</p>
+	<table>
+		<tr>
+			<td>100</td>
+			<td>200</td>
+			<td>300</td>
+		</tr>
+		<tr>
+			<td>400</td>
+			<td>500</td>
+			<td>600</td>
+		</tr>
+	</table>
+
+	<p>这个表格有一个标题，以及粗边框</p>
+	<table border="3">
+		<p>我的标题</p>
+		<tr>
+			<td>100</td>
+			<td>200</td>
+			<td>300</td>
+		</tr>
+		<tr>
+			<td>400</td>
+			<td>500</td>
+			<td>600</td>
+		</tr>
+	</table>
+
+	<p>横跨两列的单元格：</p>
+	<table border="1">
+		<tr>
+			<th>姓名</th>
+			<th colspan="2">电话</th>
+		</tr>
+		<tr>
+			<td>Bill Gates</td>
+			<td>555 77 854</td>
+			<td>555 77 855</td>
+		</tr>
+	</table>
+
+	<p>横跨两行的单元格：</p>
+	<table border="1">
+		<tr>
+		 	<th>姓名</th>
+		    <td>Bill Gates</td>
+		</tr>
+		<tr>
+		    <th rowspan="2">电话</th>
+		    <td>555 77 854</td>
+		</tr>
+		<tr>
+		    <td>555 77 855</td>
+		</tr>
+	</table>
+
+	<p>背景颜色</p>
+	<table border="1" style="background-color: red">
+		<tr>
+			<td>First</td>
+			<td>Row</td>
+		</tr>
+		<tr>
+			<td>Second</td>
+			<td>Row</td>
+	</table>
+
+	<p>背景图像</p>
+	<table border="1" style="background-image: ...">
+		<tr>
+			<td>First</td>
+			<td>Row</td>
+		</tr>
+		<tr>
+			<td>Second</td>
+			<td>Row</td>
+	</table>
+
+	<br>
+	<table border="1">
+		<tr>
+			<td>
+				<p>这是一个段落</p>
+				<p>这是另一个段落</p>
+			</td>
+			<td>
+				<p>这个单元包含一个表格:</p>
+				<table border="1">
+					<tr>
+						<td>A</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>C</td>
+						<td>D</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>这个单元包含一个列表:</p>
+				<ul>
+					<li>苹果</li>
+					<li>香蕉</li>
+					<li>菠萝</li>
+				</ul>
+			</td>
+			<td>
+				<p>HELLO</p>
+			</td>
+	</table>
+</body>
+</html>
