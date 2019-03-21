@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sum</title>
+</head>
+<body>
+	Price：<input type="text" id="price" placeholder="请输入价格，以空格分开">
+	<button onclick="sum()">提交</button>
+
+	<div id="print"></div>
+	
+	<script>
+		function sum() {
+			var price;
+			var sum = 0;
+			price = document.getElementById('price').value.split(' ');
+
+			for (var i = 0; i < price.length; i++) {
+				sum += parseFloat(price[i]);
+				// console.log(sum);
+			}
+			document.getElementById('print').innerHTML = '图书的总价为：' + sum;
+		}
+	</script>
+</body>
+</html>

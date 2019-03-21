@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Books</title>
+</head>
+<body>
+	Price：<input type="text" id="price" placeholder="请输入价格，以空格分开">
+	<button onclick="ave()">提交</button>
+
+	<div id="max"></div>
+	<div id="min"></div>
+	<div id="avg"></div>
+	
+	<script>
+		function ave() {
+			var price;
+			var sum = 0;
+			var i = 0;
+			price = document.getElementById('price').value.split(' ');
+
+			for (i; i < price.length; i++) {
+				sum += parseFloat(price[i]);
+				// console.log(sum);
+			}
+			var average = sum / i;
+
+			document.getElementById('max').innerHTML = '图书的最高价格为：' + Math.max.apply(Math, price);
+			document.getElementById('min').innerHTML = '图书的最低价格为：' + Math.min.apply(Math, price);
+			document.getElementById('avg').innerHTML = '图书的平均价格为：' + average;
+		}
+	</script>
+</body>
+</html>
