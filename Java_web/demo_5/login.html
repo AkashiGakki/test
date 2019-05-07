@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+</head>
+<body>
+	<form action="#">
+		<fieldest>
+			账号：<input type="text" id="account">
+			密码：<input type="password" id="password">
+			<button onclick="clickme()">登录</button>
+		</fieldest>
+	</form>
+</body>
+<script>
+	function clickme() {
+		var account;
+		var password;
+		account = document.getElementById('account').value;
+		// console.log(account);
+		password = document.getElementById('password').value;
+		// console.log(password);
+		if (account == password) {
+			alert("登录成功！");
+		} else {
+			alert("登录失败！");
+		}
+	}
+</script>
+</html>
