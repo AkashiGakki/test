@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Display-Login</title>
+</head>
+<body>
+	<form action="display-login2.html" method="get" onsubmit="return clickme()">
+		账号：<input type="text" id="account" name="account">
+	    密码：<input type="password" id="password" name="password">
+	    <button type="submit">登录</button>
+	</form>
+</body>
+<script>
+	function clickme() {
+		var account;
+		var password;
+		account = document.getElementById('account').value;
+		password = document.getElementById('password').value;
+		if (account == password ) {
+			alert("登录成功！");
+			return true;
+		} else {
+			alert("登录失败！");
+			return false;
+		}
+	}
+</script>
+</html>

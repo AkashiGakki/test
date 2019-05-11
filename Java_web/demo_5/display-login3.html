@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Display-Login</title>
+</head>
+<body>
+	<form>
+		用户：<input type="text" id="user-name" name="user-name">
+	    密码：<input type="text" id="password" name="password">
+	</form>
+</body>
+<script>
+	var url = location.search;
+    var url_split = url.split('&');
+    var url_user = url_split[0].split('=');
+    var url_password = url_split[1].split('=');
+    // console.log(url_user);
+    // console.log(url_password);
+    document.getElementById('user-name').value = url_user[1];
+    document.getElementById('password').value = url_password[1];
+</script>
+</html>

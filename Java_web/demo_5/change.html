@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Change</title>
+</head>
+<body>
+	<form action="javascript:;">
+		应付款：<input type="text" id="payable">
+		实际付款：<input type="text" id="realpay">
+		<button onclick="clicked()">提交</button>
+	</form>
+
+	<div id="change">
+		
+	</div>
+</body>
+<script>
+	function clicked() {
+		var payable = document.getElementById('payable').value;
+		// console.log(input1);
+		var realpay = document.getElementById('realpay').value;
+		if (parseFloat(realpay) > parseFloat(payable)) {
+			var money = [100, 50, 20, 10, 5, 1];
+			// console.log(money.length);
+			if (realpay >= 0) {
+				var change = realpay - payable;
+				for (var i=0; i<money.length; i++) {
+					var N = Math.floor(change/money[i]);
+					// document.getElementById('change').innerText = '找零：'
+					//  + money[i] + '元 - ' + N + '张';
+				
+					var div = document.createElement('DIV');
+					var text = document.createTextNode('需找零：'
+						+ money[i] + '元' + N + '张');
+						div.appendChild(text);
+					document.body.appendChild(div);
+					
+					// document.write('找零：'s
+					//  + money[i] + '元 - ' + N + '张' + '<br>');
+					change = change - N * money[i];
+					console.log(N);
+				}
+			}
+		} else {
+			alert('钱不够哦！');
+		}
+	}
+</script>
+</html>
