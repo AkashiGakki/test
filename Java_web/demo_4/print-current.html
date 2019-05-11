@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Print-Current</title>
+</head>
+<body>
+    <a href="javascript:;" onclick="clicked(this)">1</a>
+    <a href="javascript:;" onclick="clicked(this)">2</a>
+    <a href="javascript:;" onclick="clicked(this)">3</a>
+    <a href="javascript:;" onclick="clicked(this)">4</a>
+    <a href="javascript:;" onclick="clicked(this)">5</a>
+    <a href="javascript:;" onclick="clicked(this)">6</a>
+    <a href="javascript:;" onclick="clicked(this)">7</a>
+    <a href="javascript:;" onclick="clicked(this)">8</a>
+    <a href="javascript:;" onclick="clicked(this)">9</a>
+    <div id="print"></div>
+    <script>
+        function clicked(el) {
+            // console.log(el.innerText);
+            var num = el.innerText
+            document.getElementById('print').innerHTML = '该数字的平方为：' + num * num;
+            // console.log(print);
+        }
+    </script>
+</body>
+</html>
